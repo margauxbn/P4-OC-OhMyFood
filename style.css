@@ -74,7 +74,8 @@ header {
 }
 
 .fonctionnement {
-  margin-top: 2rem;
+  margin-top: 100px;
+  margin-bottom: 120px;
 }
 .fonctionnement h2 {
   font-family: roboto;
