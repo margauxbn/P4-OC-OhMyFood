@@ -73,4 +73,61 @@ header {
   opacity: 90%;
 }
 
+.fonctionnement {
+  margin-top: 2rem;
+}
+.fonctionnement h2 {
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 20px;
+  margin-bottom: 35px;
+}
+.fonctionnement .box_ordre {
+  display: flex;
+  background-color: #f6f6f6;
+  box-shadow: 1px 6px 10px #cfcfcf;
+  border-radius: 20px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fonctionnement .numero {
+  border-radius: 20px;
+  border: 1px solid #9356DC;
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  padding-top: 2px;
+  color: #fff;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+  left: -11px;
+}
+.fonctionnement i {
+  padding-right: 20px;
+  padding-top: 2px;
+}
+.fonctionnement .symbole {
+  color: grey;
+}
+.fonctionnement .symbole_violet {
+  color: #9356DC;
+}
+.fonctionnement p {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 550;
+}
+
 /*# sourceMappingURL=style.css.map */
