@@ -66,3 +66,67 @@
         }
     }   
 }
+
+.fonctionnement {
+    margin-top: 2rem;
+
+    h2 {
+        font-family: roboto;
+        font-size: 24px;
+        font-weight: 900;
+        margin-left: 20px;
+        margin-bottom: 35px;
+    }
+
+    .box_ordre {
+        display: flex;
+        background-color: #f6f6f6;
+        box-shadow: 1px 6px 10px #cfcfcf;
+        border-radius: 20px;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        margin-bottom: 30px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .numero {
+        border-radius: 20px;
+        border: 1px solid #9356DC;
+        background-color: #9356DC;
+        width: 25px;
+        height: 25px;
+        padding-top: 2px;
+        color: #fff;
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        position: absolute;
+        left: -11px;
+    }
+
+    i {
+        padding-right: 20px;
+        padding-top: 2px;
+    }
+
+    .symbole {
+        color: grey;
+    }
+
+    .symbole_violet {
+        color: #9356DC;
+    }
+
+    p {
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 550;
+    }
+}
