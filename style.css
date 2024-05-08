@@ -201,4 +201,35 @@ header {
   width: 22px;
 }
 
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+}
+footer h2 {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+footer p {
+  font-family: roboto;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+footer .hightlight_footer {
+  font-weight: 400;
+}
+footer .element_footer {
+  font-weight: 380;
+}
+footer .fa-utensils {
+  padding-right: 15px;
+}
+footer .fa-handshake-angle {
+  padding-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
