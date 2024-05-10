@@ -274,3 +274,69 @@ footer {
     }
 
 }
+
+/*Media Query for Desktop*/
+
+@media (min-width: 1024px) {
+    .localisation {
+        box-shadow: none;
+    }
+
+    .fonctionnement {
+        padding-left: 150px;
+        padding-right: 150px;
+
+        .box_fonction {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    .restaurants_homepage {
+        padding-left: 150px;
+        padding-right: 150px;
+
+        .resto_column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 70px;
+        padding-bottom: 10px;
+        padding-right: 100px;
+
+        h2 {
+            padding-left: 80px;
+        }
+
+        .link_footer {
+            display: flex;
+            flex-direction: row;
+            margin-top: 3px;
+        }
+
+        .hlght_line {
+            display: flex;
+            flex-direction: row;
+            padding-right: 50px;
+        }
+
+        .fa-handshake-angle {
+            padding-left: 20px;
+        }
+        
+        .elmt_line {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .element_footer {
+            padding-right: 20px;
+        }
+    }
+}

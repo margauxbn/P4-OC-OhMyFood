@@ -11,6 +11,12 @@ header {
   background-color: #fff;
 }
 
+/*Media Query for Desktop*/
+@media (min-width: 1024px) {
+  header {
+    padding: 20px;
+  }
+}
 .localisation {
   background-color: #EAEAEA;
   box-shadow: inset 0px 10px 20px -10px #ccc, 0px 8px 10px 0px #ccc;
@@ -251,6 +257,60 @@ footer .fa-utensils {
 }
 footer .fa-handshake-angle {
   padding-right: 10px;
+}
+
+/*Media Query for Desktop*/
+@media (min-width: 1024px) {
+  .localisation {
+    box-shadow: none;
+  }
+  .fonctionnement {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .fonctionnement .box_fonction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .restaurants_homepage {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .restaurants_homepage .resto_column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+  }
+  footer h2 {
+    padding-left: 80px;
+  }
+  footer .link_footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px;
+  }
+  footer .hlght_line {
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+  }
+  footer .fa-handshake-angle {
+    padding-left: 20px;
+  }
+  footer .elmt_line {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .element_footer {
+    padding-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
