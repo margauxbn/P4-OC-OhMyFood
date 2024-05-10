@@ -51,11 +51,13 @@ header {
   margin-right: 10px;
   margin-bottom: 30px;
 }
-.reservation, .reservation .btn_explorer {
+.reservation .btn_explorer {
   display: flex;
   justify-content: center;
 }
 .reservation a {
+  display: flex;
+  justify-content: center;
   border-radius: 100px;
   border: 0px;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -65,8 +67,10 @@ header {
   font-weight: 450;
   text-decoration: none;
   color: #fff;
-  padding: 15px;
-  width: 70%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   transition: all 250ms ease-in-out;
 }
 .reservation a:hover {
@@ -207,7 +211,7 @@ header {
   right: 0px;
   z-index: 1;
 }
-.restaurants_homepage .favori_empty:hover {
+.restaurants_homepage .favori_empty:active {
   visibility: hidden;
 }
 .restaurants_homepage .favori_full {
