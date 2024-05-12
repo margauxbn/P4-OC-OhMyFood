@@ -54,6 +54,10 @@ footer {
 @media (min-width: 1024px) {
     header {
         padding: 20px;
+
+        a {
+            padding-top: 5px;
+        }
     }
 
     footer {
