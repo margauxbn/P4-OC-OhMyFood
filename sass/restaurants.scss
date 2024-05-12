@@ -1,0 +1,150 @@
+header {
+    a {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        text-decoration: none;
+        display: flex;
+        justify-content: left;
+        color: #000;
+        font-size: 25px;
+
+        &:active {
+            color: #000;
+        }
+    }
+}
+
+.menu_page {
+    position: absolute;
+
+    img {
+        width: 100%;
+    }
+
+    .menu_card {
+        width: 100%;
+        background-color: #f6f6f6;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        position: relative;
+        bottom: 60px;
+
+        .menu_titre {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            font-family: Shrikhand;
+            font-size: 30px;
+            font-weight: 500;
+            padding-left: 15px;
+        }
+
+        .favori_empty {
+            background-color: #f6f6f6;
+            height: 22px;
+            width: 22px;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+
+        
+    }
+
+    .menu_repas {
+        
+        h3 {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 350;
+            padding-bottom: 5px;
+            padding-left: 5%;
+        }
+
+        hr {
+            border-top: 4px solid #99E2D0;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            width: 40px;
+            padding-bottom: 10px;
+            margin-left: 5%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu_plat {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 15px;
+            width: 90%;
+            box-shadow: 4px 4px 10px #ccc;
+            margin-bottom: 20px;
+            font-family: roboto;
+
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 550;
+            padding-bottom: 3px;
+        }
+
+        .card_line {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 15.04px;
+        }
+
+        .menu_ajout {
+            font-weight: 350;
+        }
+
+        .menu_prix {
+            font-weight: 550;
+        }
+
+        .last_on_list {
+            margin-bottom: 25px;
+        }
+    }
+
+    .btn_commander {
+        display: flex;
+        justify-content: center;
+
+        a {
+        display: flex;
+        justify-content: center;
+        border-radius: 100px;
+        border: 0px;
+        background: linear-gradient(0deg, #9356DC, #FF79DA);
+        text-align: center;
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 450;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        transition: all 250ms ease-in-out;
+
+        &:hover {
+            opacity: 90%;
+        } 
+        }
+    }
+}
