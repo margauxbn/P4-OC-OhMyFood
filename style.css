@@ -11,10 +11,71 @@ header {
   background-color: #fff;
 }
 
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+}
+footer h2 {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+footer p {
+  font-family: roboto;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+footer .hightlight_footer {
+  font-weight: 400;
+}
+footer .element_footer {
+  font-weight: 380;
+}
+footer .fa-utensils {
+  padding-right: 15px;
+}
+footer .fa-handshake-angle {
+  padding-right: 10px;
+}
+
 /*Media Query for Desktop*/
 @media (min-width: 1024px) {
   header {
     padding: 20px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+  }
+  footer h2 {
+    padding-left: 80px;
+  }
+  footer .link_footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px;
+  }
+  footer .hlght_line {
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+  }
+  footer .fa-handshake-angle {
+    padding-left: 20px;
+  }
+  footer .elmt_line {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .element_footer {
+    padding-right: 20px;
   }
 }
 .localisation {
@@ -228,37 +289,6 @@ header {
   right: 0px;
 }
 
-footer {
-  background-color: #353535;
-  color: #fff;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 40px;
-}
-footer h2 {
-  font-family: Shrikhand;
-  font-size: 18px;
-  font-weight: 500;
-  padding-bottom: 20px;
-}
-footer p {
-  font-family: roboto;
-  font-size: 16px;
-  padding-bottom: 10px;
-}
-footer .hightlight_footer {
-  font-weight: 400;
-}
-footer .element_footer {
-  font-weight: 380;
-}
-footer .fa-utensils {
-  padding-right: 15px;
-}
-footer .fa-handshake-angle {
-  padding-right: 10px;
-}
-
 /*Media Query for Desktop*/
 @media (min-width: 1024px) {
   .localisation {
@@ -280,36 +310,6 @@ footer .fa-handshake-angle {
   .restaurants_homepage .resto_column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-top: 70px;
-    padding-bottom: 10px;
-    padding-right: 100px;
-  }
-  footer h2 {
-    padding-left: 80px;
-  }
-  footer .link_footer {
-    display: flex;
-    flex-direction: row;
-    margin-top: 3px;
-  }
-  footer .hlght_line {
-    display: flex;
-    flex-direction: row;
-    padding-right: 50px;
-  }
-  footer .fa-handshake-angle {
-    padding-left: 20px;
-  }
-  footer .elmt_line {
-    display: flex;
-    flex-direction: row;
-  }
-  footer .element_footer {
-    padding-right: 20px;
   }
 }
 header a {
