@@ -361,6 +361,19 @@ header a:active {
   width: 22px;
   margin-top: 10px;
   margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.menu_page .menu_card .favori_empty:active {
+  visibility: hidden;
+}
+.menu_page .menu_card .favori_full {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 30px;
+  z-index: 0;
 }
 .menu_page .menu_repas h3 {
   font-family: Roboto;
@@ -387,28 +400,53 @@ header a:active {
 .menu_page .menu_repas .menu_plat {
   background-color: #fff;
   border-radius: 20px;
-  padding: 15px;
   width: 90%;
   box-shadow: 4px 4px 10px #ccc;
   margin-bottom: 20px;
   font-family: roboto;
+  overflow: hidden;
+}
+.menu_page .menu_repas .menu_emplacement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_page .menu_repas .menu_description {
+  padding: 15px;
 }
 .menu_page .menu_repas h4 {
   font-size: 18px;
   font-weight: 550;
   padding-bottom: 3px;
 }
-.menu_page .menu_repas .card_line {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 15.04px;
-}
 .menu_page .menu_repas .menu_ajout {
   font-weight: 350;
+  text-overflow: ellipsis;
+}
+.menu_page .menu_repas .box_right {
+  display: flex;
+  flex-direction: row;
+  margin-right: -60px;
+  transition: all 600ms;
+}
+.menu_page .menu_repas .menu_plat:active .box_right {
+  margin-right: 0px;
 }
 .menu_page .menu_repas .menu_prix {
   font-weight: 550;
+  padding-top: 38px;
+  padding-right: 15px;
+}
+.menu_page .menu_repas .menu_selecteur {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
 }
 .menu_page .menu_repas .last_on_list {
   margin-bottom: 25px;
@@ -470,6 +508,15 @@ header a:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .menu_page .menu_card .box_right {
+    margin-right: -80px;
+  }
+  .menu_page .menu_card .menu_selecteur {
+    width: 80px;
+  }
+  .menu_page .menu_card .menu_plat:hover .box_right {
+    margin-right: 0px;
   }
 }
 
