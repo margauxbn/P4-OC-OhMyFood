@@ -306,6 +306,9 @@ footer .fa-handshake-angle {
     flex-direction: row;
     align-items: center;
   }
+  .fonctionnement .box_ordre {
+    width: 30%;
+  }
   .restaurants_homepage {
     padding-left: 150px;
     padding-right: 150px;
