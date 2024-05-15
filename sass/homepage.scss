@@ -18,7 +18,9 @@
 }
 
 .reservation {
-    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,8 +76,8 @@
 }
 
 .fonctionnement {
-    margin-top: 100px;
-    margin-bottom: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     h2 {
         font-family: roboto;
@@ -139,7 +141,9 @@
 }
 
 .restaurants_homepage {
+    padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #f6f6f6;
 
     h2 {
         font-family: roboto;
