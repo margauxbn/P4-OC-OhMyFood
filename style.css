@@ -275,7 +275,7 @@ footer .fa-handshake-angle {
   color: black;
 }
 .restaurants_homepage p, .restaurants_homepage .resto_titre {
-  font-size: 18;
+  font-size: 18px;
   font-weight: 900;
   margin-bottom: 3px;
 }
@@ -307,6 +307,9 @@ footer .fa-handshake-angle {
 @media (min-width: 1024px) {
   .localisation {
     box-shadow: none;
+  }
+  .reservation h2 {
+    font-size: 40px;
   }
   .fonctionnement {
     padding-left: 150px;
@@ -366,7 +369,7 @@ header a:active {
 }
 .menu_page .menu_card h2 {
   font-family: Shrikhand;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 500;
   padding-left: 15px;
 }
