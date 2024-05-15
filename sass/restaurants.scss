@@ -54,7 +54,7 @@ header {
             position: relative;
             z-index: 2;
 
-            &:active {
+            &:hover {
                 visibility: hidden;
             }
         }
@@ -133,7 +133,7 @@ header {
             transition: all 600ms;
         }
 
-        .menu_plat:active .box_right {
+        .menu_plat:hover .box_right {
             margin-right: 0px;
         }
 
@@ -236,10 +236,6 @@ header {
 
             .menu_selecteur {
                 width: 80px;
-            }
-
-            .menu_plat:hover .box_right {
-                margin-right: 0px;
             }
         }
     }

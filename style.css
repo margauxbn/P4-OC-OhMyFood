@@ -281,7 +281,7 @@ footer .fa-handshake-angle {
   right: 0px;
   z-index: 1;
 }
-.restaurants_homepage .favori_empty:active {
+.restaurants_homepage .favori_empty:hover {
   visibility: hidden;
 }
 .restaurants_homepage .favori_full {
@@ -367,7 +367,7 @@ header a:active {
   position: relative;
   z-index: 2;
 }
-.menu_page .menu_card .favori_empty:active {
+.menu_page .menu_card .favori_empty:hover {
   visibility: hidden;
 }
 .menu_page .menu_card .favori_full {
@@ -431,7 +431,7 @@ header a:active {
   margin-right: -60px;
   transition: all 600ms;
 }
-.menu_page .menu_repas .menu_plat:active .box_right {
+.menu_page .menu_repas .menu_plat:hover .box_right {
   margin-right: 0px;
 }
 .menu_page .menu_repas .menu_prix {
@@ -516,9 +516,6 @@ header a:active {
   }
   .menu_page .menu_card .menu_selecteur {
     width: 80px;
-  }
-  .menu_page .menu_card .menu_plat:hover .box_right {
-    margin-right: 0px;
   }
 }
 
