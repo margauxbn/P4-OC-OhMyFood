@@ -29,6 +29,9 @@ header {
         border-top-right-radius: 40px;
         position: relative;
         bottom: 60px;
+        margin-bottom: -60px;
+        padding-bottom: 60px;
+
 
         .menu_titre {
             display: flex;
