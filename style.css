@@ -415,15 +415,21 @@ header a:active {
 }
 .menu_page .menu_repas .menu_description {
   padding: 15px;
+  overflow: hidden;
 }
 .menu_page .menu_repas h4 {
   font-size: 18px;
   font-weight: 550;
   padding-bottom: 3px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu_page .menu_repas .menu_ajout {
   font-weight: 350;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu_page .menu_repas .box_right {
   display: flex;
