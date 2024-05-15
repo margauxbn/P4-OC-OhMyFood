@@ -88,7 +88,8 @@ footer .fa-handshake-angle {
 }
 .localisation {
   background-color: #EAEAEA;
-  box-shadow: inset 0px 10px 20px -10px #ccc, 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: inset 0px 10px 20px -10px rgba(0, 0, 0, 0.2509803922), 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  position: relative;
   padding: 16px;
 }
 .localisation div, .localisation .ville {
