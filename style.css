@@ -537,12 +537,6 @@ header a:active {
     flex-direction: column;
     justify-content: center;
   }
-  .menu_page .menu_card .box_right {
-    margin-right: -80px;
-  }
-  .menu_page .menu_card .menu_selecteur {
-    width: 80px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
