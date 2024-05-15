@@ -13,7 +13,6 @@ header {
 
 footer {
     background-color: #353535;
-    color: #fff;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 40px;
@@ -22,12 +21,19 @@ footer {
         font-family: Shrikhand;
         font-size: 18px;
         font-weight: 500;
+        color: #fff;
         padding-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     p {
         font-family: roboto;
         font-size: 16px;
+        text-decoration: none;
+        color: #fff;
         padding-bottom: 10px;
     }
 
