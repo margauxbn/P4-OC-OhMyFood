@@ -103,7 +103,9 @@ footer .fa-handshake-angle {
 }
 
 .reservation {
-  margin-top: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,8 +156,8 @@ footer .fa-handshake-angle {
 }
 
 .fonctionnement {
-  margin-top: 100px;
-  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .fonctionnement h2 {
   font-family: roboto;
@@ -212,7 +214,9 @@ footer .fa-handshake-angle {
 }
 
 .restaurants_homepage {
+  padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #f6f6f6;
 }
 .restaurants_homepage h2 {
   font-family: roboto;
