@@ -512,6 +512,51 @@ header a:active {
 .menu_page .menu_repas .last_on_list {
   margin-bottom: 25px;
 }
+.menu_page .cat1 {
+  animation-duration: 2s;
+  animation-name: opacity;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu_page .cat2 {
+  animation-duration: 3s;
+  animation-name: opacity;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu_page .cat3 {
+  animation-duration: 4s;
+  animation-name: opacity;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu_page .btn_commander {
   display: flex;
   justify-content: center;
