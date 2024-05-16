@@ -171,6 +171,40 @@ header {
         }
     }
 
+    .cat1 {
+        animation-duration: 2s;
+        animation-name: opacity;
+    }
+
+    @keyframes opacity {
+        0% {opacity: 0;}
+        5% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    .cat2 {
+        animation-duration: 3s;
+        animation-name: opacity;
+    }
+
+    @keyframes opacity {
+        0% { opacity: 0;}
+        15% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    .cat3 {
+        animation-duration: 4s;
+        animation-name: opacity;
+    }
+
+    @keyframes opacity {
+        0% { opacity: 0;}
+        25% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    
     .btn_commander {
         display: flex;
         justify-content: center;
