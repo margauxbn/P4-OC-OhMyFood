@@ -520,9 +520,6 @@ header a:active {
   0% {
     opacity: 0;
   }
-  5% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
@@ -535,9 +532,6 @@ header a:active {
   0% {
     opacity: 0;
   }
-  15% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
@@ -548,9 +542,6 @@ header a:active {
 }
 @keyframes opacity {
   0% {
-    opacity: 0;
-  }
-  25% {
     opacity: 0;
   }
   100% {

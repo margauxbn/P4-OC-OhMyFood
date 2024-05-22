@@ -21,14 +21,15 @@
 }
 
 @keyframes loading {
-    from { transform: rotate(0turn) }
-    to { transform: rotate(1turn) }
+    from {transform: rotate(0turn)}
+    to {transform: rotate(1turn)}
 }
 
 .loader_transition {
     opacity: 0;
     visibility: hidden;
 }
+
 .localisation {
     background-color: #EAEAEA;
     box-shadow: inset 0px 10px 20px -10px #00000040, 0px 4px 4px 0px #00000040;
