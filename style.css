@@ -88,14 +88,14 @@ footer .fa-handshake-angle {
 }
 .loader {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 3s, visibility 3s;
+  animation: 2s loader-timer cubic-bezier(0, 0, 1, -0.45) forwards;
 }
 .loader::after {
   content: "";
@@ -107,6 +107,20 @@ footer .fa-handshake-angle {
   animation: loading 3s ease infinite;
 }
 
+@keyframes loader-timer {
+  from {
+    opacity: 1;
+    z-index: 10;
+  }
+  60% {
+    opacity: 1;
+    z-index: 10;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 @keyframes loading {
   from {
     transform: rotate(0turn);
@@ -115,11 +129,6 @@ footer .fa-handshake-angle {
     transform: rotate(1turn);
   }
 }
-.loader_transition {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .localisation {
   background-color: #EAEAEA;
   box-shadow: inset 0px 10px 20px -10px rgba(0, 0, 0, 0.2509803922), 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
@@ -318,24 +327,29 @@ footer .fa-handshake-angle {
   font-size: 17px;
   font-weight: 300;
 }
-.restaurants_homepage .favori_empty {
+.restaurants_homepage .favorite .favori_empty {
   background-color: #fff;
   height: 20px;
   width: 22px;
   position: absolute;
   top: 10px;
   right: 0px;
-  z-index: 1;
+  opacity: 1;
 }
-.restaurants_homepage .favori_empty:hover {
-  visibility: hidden;
-}
-.restaurants_homepage .favori_full {
+.restaurants_homepage .favorite .favori_full {
   height: 20px;
   width: 22px;
   position: absolute;
   top: 10px;
   right: 0px;
+  z-index: 2;
+  opacity: 0;
+}
+.restaurants_homepage .favorite:hover .favori_empty {
+  opacity: 0;
+}
+.restaurants_homepage .favorite:hover .favori_full {
+  opacity: 1;
 }
 
 /*Media Query for Desktop*/
@@ -393,8 +407,8 @@ header a:active {
   border-top-right-radius: 40px;
   position: relative;
   bottom: 60px;
-  margin-bottom: -60px;
   padding-bottom: 60px;
+  margin: 0 auto -60px auto;
 }
 .menu_page .menu_card .menu_titre {
   display: flex;
@@ -408,18 +422,24 @@ header a:active {
   font-weight: 500;
   padding-left: 15px;
 }
+.menu_page .menu_card .like {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.menu_page .menu_card .like:hover .favori_empty {
+  opacity: 0;
+}
+.menu_page .menu_card .like:hover .favori_full {
+  opacity: 1;
+}
 .menu_page .menu_card .favori_empty {
   background-color: #f6f6f6;
   height: 22px;
   width: 22px;
-  margin-top: 10px;
-  margin-right: 20px;
   cursor: pointer;
   position: relative;
   z-index: 2;
-}
-.menu_page .menu_card .favori_empty:hover {
-  visibility: hidden;
+  opacity: 2;
 }
 .menu_page .menu_card .favori_full {
   height: 22px;
@@ -427,6 +447,7 @@ header a:active {
   position: absolute;
   top: 30px;
   z-index: 0;
+  opacity: 0;
 }
 .menu_page .menu_repas h3 {
   font-family: Roboto;
@@ -512,40 +533,30 @@ header a:active {
 .menu_page .menu_repas .last_on_list {
   margin-bottom: 25px;
 }
-.menu_page .cat1 {
+.menu_page .menu_categorie {
+  animation: fade forwards;
+  opacity: 0;
+}
+.menu_page .menu_categorie:first-child {
+  animation-delay: 0;
   animation-duration: 2s;
-  animation-name: opacity;
 }
-@keyframes opacity {
-  0% {
+.menu_page .menu_categorie:nth-child(2) {
+  animation-delay: 0.3s;
+  animation-duration: 2s;
+}
+.menu_page .menu_categorie:last-child {
+  animation-delay: 0.6s;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {
     opacity: 0;
+    transform: translateY(1.6rem);
   }
-  100% {
+  to {
     opacity: 1;
-  }
-}
-.menu_page .cat2 {
-  animation-duration: 3s;
-  animation-name: opacity;
-}
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu_page .cat3 {
-  animation-duration: 4s;
-  animation-name: opacity;
-}
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+    transform: translateY(0);
   }
 }
 .menu_page .btn_commander {
@@ -580,10 +591,6 @@ header a:active {
   .menu_page img {
     height: 380px;
     object-fit: cover;
-  }
-  .menu_page .emplacement_RD {
-    display: flex;
-    justify-content: center;
   }
   .menu_page .menu_card {
     width: 70%;
